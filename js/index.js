@@ -58,6 +58,26 @@ var op;
         op = resul.innerHTML;
         resul.innerHTML="";
     }
+
+    resta.onclick = function(){
+        n1 = resul.innerHTML; 
+        resul.innerHTML ="-";
+        op = resul.innerHTML;
+        resul.innerHTML="";
+    }
+    division.onclick = function(){
+        n1 = resul.innerHTML; 
+        resul.innerHTML ="/";
+        op = resul.innerHTML;
+        resul.innerHTML="";
+    }
+
+    multiplicacion.onclick = function(){
+        n1 = resul.innerHTML; 
+        resul.innerHTML ="*";
+        op = resul.innerHTML;
+        resul.innerHTML="";
+    }
     raiz.onclick = function(){
         n1 = resul.innerHTML; 
         resul.innerHTML ="√";
@@ -78,6 +98,16 @@ var op;
            case "^":
                resul.innerHTML = Math.pow(parseFloat(n1), parseFloat(resul.innerHTML)); 
                break;  
+            case "-":
+               resul.innerHTML = parseFloat(n1)-parseFloat(resul.innerHTML);
+               break; 
+               case "*":
+               resul.innerHTML = parseFloat(n1)*parseFloat(resul.innerHTML);
+               break; 
+               case "/":
+               resul.innerHTML = parseFloat(n1)/parseFloat(resul.innerHTML);
+               break; 
+           
            
        }
     }
