@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+table{
+    background-color: red;
+    margin: auto;
+}
+
+.botones{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+}
